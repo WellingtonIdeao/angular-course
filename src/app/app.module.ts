@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { MyFirstComponent } from './my-first/my-first.component';
 import { MyFirst2Component } from './my-first2/my-first2.component';
 import { CursosModule } from './cursos/cursos.module';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { CursosModule } from './cursos/cursos.module';
     AppComponent,
     MyFirstComponent,
     MyFirst2Component,
+    DataBindingComponent,
   ],
   imports: [
     BrowserModule,
