@@ -10,6 +10,11 @@ export class DataBindingComponent {
   cursoAngular: boolean = true;
   urlImagem: string = 'https://picsum.photos/200/300';
 
+  currentValue: string = '';
+  savedValue: string = '';
+
+  isMouseOver: boolean = false;
+
   constructor() { }
 
   getValor(): number{
@@ -18,6 +23,18 @@ export class DataBindingComponent {
 
   getCurtirAngular(): boolean{
     return true;
+  }
+  buttonClicked(): void{
+    alert('botao clicado');
+  }
+  onKeyUp(event: KeyboardEvent): void{
+    this.currentValue = (<HTMLInputElement>event.target).value;
+  }
+  saveValue(value: string): void {
+    this.savedValue = value;
+  }
+  onMouseOverOut(): void{
+    this.isMouseOver = !this.isMouseOver;
   }
     
 
