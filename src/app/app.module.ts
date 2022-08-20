@@ -9,6 +9,7 @@ import { MyFirstComponent } from './my-first/my-first.component';
 import { MyFirst2Component } from './my-first2/my-first2.component';
 import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { FormModule } from './shared/form/form.module';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     BrowserModule,
     AppRoutingModule,
     CursosModule,
+    FormModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
