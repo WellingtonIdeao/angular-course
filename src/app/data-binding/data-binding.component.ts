@@ -15,6 +15,8 @@ export class DataBindingComponent {
 
   isMouseOver: boolean = false;
 
+  nomeCurso:string = "Angular";
+
   constructor() { }
 
   getValor(): number{

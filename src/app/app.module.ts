@@ -10,6 +10,7 @@ import { MyFirst2Component } from './my-first2/my-first2.component';
 import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormModule } from './shared/form/form.module';
+import { InputPropertyComponent } from './input-property/input-property.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { FormModule } from './shared/form/form.module';
     MyFirstComponent,
     MyFirst2Component,
     DataBindingComponent,
+    InputPropertyComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 <section>
+    <!--
     <article>
         <h3>Interpolation / Interpolação</h3>
         <p>String renderizada com interpolação: {{ url }}</p>
@@ -24,14 +25,14 @@
             </select>
             <br>
             <br>
-            <!--Class Binding-->
+            Class Binding
             <div class="alert {{classe.value}}" role="alert">Texto colorido conforme o valor do combo box</div>
             <div class="alert" role="alert" [class.alert-success]="classe.value == 'alert-success'">A simple success alert—check it out!</div>
             <div class="alert" role="alert" [class.alert-info]="classe.value == 'alert-info'">A simple info alert—check it out!</div>
             <div class="alert" role="alert" [class.alert-warning]="classe.value == 'alert-warning'">A simple warning alert—check it out!</div>
             <div class="alert" role="alert" [class.alert-danger]="classe.value == 'alert-danger'">A simple danger alert—check it out!</div>
 
-            <!--Style Binding-->
+            Style Binding 
             <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger'? 'block': 'none'">A simple danger alert—check it out!</div>
         </div>
     </article>
@@ -60,5 +61,10 @@
         </div>    
     </article>
     <br><br>
-    <app-form></app-form>
+    <app-form></app-form> --> 
+    <article>
+        <h3>Input/Output Properties</h3>
+        <app-curso [name]="nomeCurso"></app-curso>
+    </article>
+    
 </section>
