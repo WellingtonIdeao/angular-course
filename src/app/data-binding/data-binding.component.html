@@ -65,6 +65,6 @@
     <article>
         <h3>Input/Output Properties</h3>
         <app-curso [name]="nomeCurso"></app-curso>
+        <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador>
     </article>
-    
 </section>
